@@ -1,0 +1,75 @@
+<!DOCTYPE=html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Finger+Paint&effect=fire" rel="stylesheet"><!--Font closest to Slay the Spire title font. Fire effect for extra standout appeal--> 
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&effect=outline" rel="stylesheet"><!--for p font and effect--> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Listener for size-->
+		<meta charset="utf-8">
+		<meta name ="author" content="Tate Mowbray"><!--Thats me-->
+		<title>Slay the Spire Fan Page | ICS 118 Midterm</title>
+	</head>
+	<body>
+		<div id="top"><!--for nav bar and title image. Pseudo header to group my elements(for my beginner level skillz)-->
+			<div class="nav"> 
+				<a href="#showcase"><img src="images/title.png" alt="Slay the Spire" id="title" ></a><!--title links to showcase-->
+				<label for="toggle"><img id="menuToon" src="images/menuSrc.png" ></label>  <!--shows 3 keys game image as hamburger menu when small enough-->
+				<input type="checkbox" id="toggle"/> 
+				<div class="menu"><!--Joe code-->    
+					<a href="#showcase">HOME</a><!--#links link to specific div IDs for easier webpage navigation-->  
+					<a href="#about">ABOUT</a>   
+					<a href="#guide">GUIDE</a>      
+					<a href="#contact"><span>SIGN UP</span></a> 
+				</div>
+			</div>
+		</div>
+		<div id="showcase"><!--for background(absolute)video and fan page title-->
+			<h1 class="font-effect-fire"> Slay the Spire Fan Page</h1><!--Font effect from google css. Also see p font effect-->
+			<video class="myVideo" src="video/video.mp4" type="video/mp4" autoplay="true" muted="muted" preload="auto" loop="true"/>
+		</div>
+		<div id="about"><!--for characters and their images-->
+			<div class="character"><!--ingame character list of current playable characters.Info taken then edited from there->For add info see https://slay-the-spire.fandom.com/wiki/Slay_the_Spire_Wiki-->
+			<img src="images/Ironclad.png" alt="Ironclad" class="charImg">
+			<h1>The Ironclad</h1><!--p font effect for consistency with next section-->
+				<p class="font-effect-outline">The Ironclad is the first playable character in Slay the Spire.
+				He wields an arsenal of powerful strikes, boasts formidable defensive options, and can draw fiendish power from his demonic benefactors. 
+				He starts with 80 hp, highest of the playable characters</p>
+			</div>
+			<div class="character">
+				<img src="images/Silent.png" alt="Silent" class="charImg">
+				<h1>The Silent</h1>
+				<p class="font-effect-outline"> The Silent is the second playable character in Slay the Spire.
+				She is themed on a rogue fantasy build using poisons and daggers to move through the spire.
+				She starts with a relatively low 70 hp</p>
+			</div>
+			<div class="character">
+			<img src="images/Defect.png" alt="Defect" class="charImg">
+			<h1>The Defect</h1>
+			<p class="font-effect-outline">The Defect is the third playable character in Slay the Spire. 
+			Using cards and Relics, The Defect Channels elemental spheres into a set of Orb slots. The Defect starts with three Orb slots and 75 hp.</p>
+			</div>
+		</div>
+		<div id="guide"><!--for game info-->
+			<h1>Quick Player Guide</h1><!--Player guide written by me. It's not very coherent advice because I am a casual-->
+			<p class="font-effect-outline"><!--font effect allows better readability on this sections background-->Slay the spire is a rogue-like game. Don't be upset if you cant slay the spire on the first try. 
+			As you progress in the game, you player will unlock new cards and relics which may provide powerful bonuses for your run.
+			Collecting relics and upgrading cards are the best way for a player to go far in a particular run. There are three main Acts in the game the player will have to endure, each with their own unique set of bosses.
+			Certain bosses can be countered with specific stratgies or tactics so be sure to know which boss you will be facing at the end of your Act.</p>
+			<p class="font-effect-outline">Character playstyles will vary from run to run. Some runs will be filled with cards that combo well together but will fail against a certain opponent.
+			Runs generally cannot be mimicked but can be quite similar. Don't try to rebuild the epic combo deck you may have gotten on a previous run. Just use what you are given.
+			Note that cards and relics do not always have to be collected at the end of a floor. The player can pick and choose what they feel is best. A good strategy for 
+			players looking to save health is by picking the route with the most ? rooms as they have a lower chance of combat. A good strategy for players looking to collect relics
+			is to pick the route with the most elite combats since elittes are guarenteed to drop a relic at the end of combat. Elites are much more powerful than normal enemies,
+			so this strategy is not for the faint of heart.</p>
+		</div>
+		<div id ="contact">
+			<form action="#showcase" method="post"><!--for email signup adn blurred video-->
+				<h1>The End?</h1>
+				<input type="text" Placeholder="Full Name..." required class="font-effect-outline"/><br>
+				<input type="email" placeholder="Email..." required class="font-effect-outline" /><br>
+				<button type="submit" class="button_1">Subscribe</button>
+				<video id="formVid" class="myVideo" src="video/video.mp4" type="video/mp4" autoplay="true" muted="muted" preload="auto" loop="true"/><!--Extra ID for better specificity on form video-->
+			</form>
+		</div>
+	</body>
+	</html>

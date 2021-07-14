@@ -1,0 +1,336 @@
+/*******************GLOBALS*************************/
+html, body{
+	width:100%;
+	margin:0;
+	padding:0;
+	cursor:url('images/cursor.cur'),auto;
+}
+p{
+	font-family: 'Permanent Marker', cursive;
+}
+/***************VIDEO*******************/
+.myVideo{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index: -100;
+}
+/********************NAV BAR*************************/
+#title{/*title image*/
+	float:left;
+	height:80%;
+	line-height:70px;
+}
+#top{
+	position:fixed;
+	top:0;
+	width: 100%;
+	background:url(images/headerBack.png) no-repeat;/*header back image*/
+	background-position: center;
+	background-size: cover;
+	padding-top: 20px;
+	height: 100px;
+	border-bottom:#bb572b 3px solid; /*ironclad pants red */
+	z-index:100;
+}
+.nav {
+	text-align: right;
+	height: 100px;
+	line-height: 80px;
+	top:0;
+	right:0;
+	font-size:2em;
+}
+.menu {
+    margin: 0 30px 0 0;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: #75c7e0;/*defect blue*/
+    margin: 0 10px;
+    line-height: 70px;
+}
+#menuToon{/*hamburger menu image*/
+	height:100px;
+	display:inline;
+	left:15%;
+}
+span {
+    color: #68af60;/*silent cloak green*/
+}
+label {
+    margin: 0 40px 0 0;
+    font-size: 2em;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+/**************BODY****************/
+#showcase{
+	height:100vh;
+}
+#showcase h1{
+	color:#f4d520; /*title gold*/
+	position:absolute;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);/*center text*/
+	font-weight:400;
+	font-size:3em;
+	font-family: 'Finger Paint', cursive;/*import from google*/
+}
+#about{/*description of characters*/
+	background-color:#5d4f43;/*key back brown/grey*/
+	height:100vh;
+	width:100%;
+}
+#about .charImg{/*pictures of playable characters*/
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:150px;
+}
+#about h1{
+	font-size:2em;
+	text-align:center;
+}
+#about p{
+	color:#68af60;/*silent cloak green*/
+	font-size: 1.5em;
+	text-align:center;
+}
+.character{/*for about section*/
+	float:left;
+	height:60%;
+	width:30%;
+	margin:10px;
+	display:block;
+	margin-left:1.5%;
+	margin-right:1.5%;
+	overflow:auto;
+	margin-top:12%;
+}
+#guide{
+	background:url('images/guideBack.jpg') no-repeat;
+	height:100vh;
+	width:100%;
+	background-attachment:fixed;
+}
+#guide p{
+	text-align:center;
+	color:#e7bae7;
+	font-size:1.5em;
+	margin:2%;
+	padding:5px;
+}
+#guide h1{
+	color:#fcf4e0;/*end turn button off-white*/
+	text-align:center;
+	margin:0;
+	padding:0;
+	padding-top:6%;
+	font-size:2em;
+}
+#contact{
+	height:100vh;
+	width:100%;
+	color:fdfdfd;/*card off-white*/
+}
+#contact form{
+	position:absolute;
+	display: block;/*center element*/
+	margin-left: auto;
+	margin-right: auto;
+	height:50%;
+	width:40%;
+	left: 35%;
+	text-align:center;
+	z-index:3;
+	margin-top:20%;
+	overflow:hidden;
+}
+#contact input{/*see strike.png for hex reference*/
+	text-align:left;
+	margin:10px;
+	background-color:#9b9b9b;/*card back grey*/
+	color:fdfdfd;/*card text white*/
+	border:2px solid #44f2ff; /*card hover border*/
+	height:20%;
+	font-size:1.5em;
+}
+::placeholder {
+  color: fdfdfd;
+}
+#contact button{/*see button.png for hex reference*/
+	text-align:center;
+	background-color: #3b5761; /*end turn button blue*/
+  border: 2px solid #aaa278;/*end turn button border beige*/
+  color: #fcf4e0;/*end turn button off-white*/
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.7em;
+}
+#contact button:active {/*on click press effect*/
+  background-color: #75c7e0;/*defect blue*/
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#formVid{
+	filter:blur(4px);
+	position:absolute;
+	z-index:-20;
+	min-height:100%;
+	border:2px solid #fdfdfd;
+	overflow:hidden;
+	width:200%;
+}
+/*************QUERY FOR IPAD*****************/
+@media only screen and (max-width: 768px){
+    label {
+      display: block;
+      cursor: pointer;
+			width:25%;
+    }
+    .menu {
+			text-align:center;
+			display:block;
+			margin-left:auto;
+			margin-right:auto;
+			width: 100%;
+			display: none;
+    }
+    .menu a {
+			background-color:gray;
+			display: block;
+      border-bottom: 1px solid #bf3021; /*ironclad pants red*/
+      margin: 0;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+		/*******************IPAD VIDEO*******************/
+		.myVideo{
+			position: fixed;
+			height: 100%;
+			width:auto;
+			overflow:hidden;
+			display: block;
+			margin: 0 auto;
+			transform: translate(-35%);
+		}
+		/*****************IPAD BODY****************/
+		#showcase{
+			width:100%;
+			text-align:center;
+		}
+		#about{
+			background-color:#5d4f43;/*key back brown/grey*/
+			height:125%;
+			width:100%;
+		}
+		#about .charImg{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			height:140px;
+		}
+		.character{
+			clear:both;
+			height:30%;
+			width:95%;
+			padding:2%;
+			margin-top:0;
+			display:block;
+			margin-left:auto;
+			margin-right:auto;
+			overflow:visible;
+		}
+		#guide{
+			margin:0;
+			padding:0;
+			height:auto;
+			width:100%;
+			background-position: center;
+		}
+		#contact{
+			height:100vh;
+			width:100%;
+			color:fdfdfd;
+		}
+		#contact form{
+			height:35%;
+			width:60%;
+			left: 23%;
+			z-index:3;
+			margin-top:20%;
+		}
+		#contact input{
+			height:20%;
+			left:10%
+		}
+		#contact h1{
+			left:10%;
+		}
+		#contact button{
+			font-size: 1.7em;
+		}
+		#formVid{
+			left:20%;
+		}
+}
+/****************QUERY FOR IPHONE***************/
+@media only screen and (max-width: 414px){
+	/*****************IPHONE VIDEO***************/
+.myVideo{
+		overflow:hidden;
+		display: block;
+		margin: 0 auto;
+		transform: translate(-50%);
+	}
+/************IPHONE BODY****************/
+#showcase{
+	height:100vh;
+}
+#showcase h1{
+	font-size:2.5em;
+}
+#about{
+	height:175%;
+	width:100%;
+}
+#about p{
+	font-size: 1em;
+}
+#guide{
+	height:auto;
+	width:100%;
+	background-position: center;
+}
+#guide p{
+	font-size:1em;
+}
+#contact form{
+		height:auto;
+		width:auto;
+		left: 15%;
+		z-index:3;
+		margin-top:30%;
+	}
+#formVid{
+	filter:blur(4px);
+	position:absolute;
+	z-index:-20;
+	margin-left:22.5%;
+	}
+#contact button{/*see button.png for hex reference*/
+	font-size: 1.7em;
+	}
+}
